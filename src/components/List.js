@@ -4,12 +4,14 @@ import Alert from "@material-ui/lab/Alert";
 import { getFiles, getPdf } from "../Api/AuthApi";
 import { globalContext } from "../context/globalContext";
 import "../css/List.css";
+
 const List = () => {
   const {
     globalState: { token },
   } = useContext(globalContext);
 
   const [allFiles, setAllFiles] = useState([]);
+  const [originalFiles, setOriginalFiles] = useState([]);
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState("success");
   useEffect(() => {
@@ -18,6 +20,7 @@ const List = () => {
         .then((res) => {
           console.log(res);
           setAllFiles(res.files);
+          setOriginalFiles(res.files);
         })
         .catch((err) => {
           console.log(err);
@@ -42,8 +45,24 @@ const List = () => {
         setMessageType("error");
       });
   };
+
+  const filterFiles = (value) => {
+    if (value) {
+      const tempFiles = allFiles.filter((fil) => fil.fileName.includes(value));
+      setAllFiles(tempFiles);
+    } else {
+      setAllFiles(originalFiles);
+    }
+  };
   return (
     <div>
+      <div className="search">
+        <input
+          type="text"
+          placeholder="Search"
+          onChange={(e) => filterFiles(e.target.value)}
+        />
+      </div>
       <ul>
         {allFiles &&
           allFiles.map((file) => {
