@@ -87,7 +87,7 @@ const Singup = () => {
         <button className="signin-button" onClick={handleSignin}>
           Sign in
         </button>
-        <Link to="/forgot">Forgot password?</Link>
+        <Link to="/signup">New User? Sign Up</Link>
       </div>
     </div>
   );
