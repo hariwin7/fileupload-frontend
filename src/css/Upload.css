@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  justify-content: center;
+}
+
+.upload-head {
+  font-size: 2rem;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  border: 2px solid #3f81c7;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.custom-file-input::-webkit-file-upload-button:focus {
+  border: 2px solid #3f81c7;
+}

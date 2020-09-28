@@ -1,0 +1,92 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  background-color: white;
+  border: 1px solid #eee;
+  padding: 3rem;
+  margin-top: 15rem;
+}
+
+.signup input {
+  height: 2.5rem;
+  border: 1px solid #eee;
+  padding: 2px;
+  font-size: medium;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+}
+
+.signup input:focus {
+  border-color: #7dbef1;
+  box-shadow: 0 0 5px #7dbef1;
+  outline: none;
+}
+
+.signup-button {
+  margin-top: 1rem;
+  align-self: center;
+  width: 20rem;
+  border: none;
+  font-size: medium;
+  height: 45px;
+  background-color: #3f81c7;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.signup-button:focus {
+  outline: none;
+}
+
+.signin-button {
+  margin-top: 1rem;
+  align-self: center;
+  width: 8rem;
+  border: none;
+  font-size: medium;
+  height: 45px;
+  background-color: #3f81c7;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.signin-button:focus {
+  outline: none;
+}
+
+.signup select {
+  padding-left: 10px;
+  height: 2.6rem;
+  border: 1px solid #eee;
+  padding: 2px;
+  font-size: medium;
+  background-color: white;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+}
+
+.signup select:focus {
+  border-color: #7dbef1;
+  box-shadow: 0 0 5px #7dbef1;
+  outline: none;
+}
+
+.sign-div {
+  display: flex;
+  align-content: space-between;
+}
+
+.sign-div a {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: #999;
+  text-decoration: none;
+}
+
+.sign-div a:hover {
+  text-decoration: underline;
+}
+.MuiAlert-root {
+  margin-bottom: 1.5rem;
+}

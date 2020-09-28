@@ -1,0 +1,57 @@
+.App {
+  font-family: helvetica neue, aktiv-grotesk-std, helvetica, arial, freesans,
+    liberation sans, numbus sans l, sans-serif;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+.flex-between {
+  justify-content: space-between;
+}
+
+.input-style {
+  height: 2.5rem;
+  border: 1px solid #eee;
+  padding: 2px;
+  font-size: medium;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+}
+
+.input-style:focus {
+  border-color: #7dbef1;
+  box-shadow: 0 0 5px #7dbef1;
+  outline: none;
+}
+
+.button-style {
+  margin-top: 1rem;
+  align-self: center;
+  width: 8rem;
+  border: none;
+  font-size: medium;
+  height: 45px;
+  background-color: #3f81c7;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-style:focus {
+  outline: none;
+}
